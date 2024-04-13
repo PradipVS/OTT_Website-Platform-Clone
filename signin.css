@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+	background-color: rgba(0, 0, 0, 0.603);
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.login
+{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 10px;
+	width: 400px;
+	height: 95vh;
+	padding: 40px;
+	background-color: rgba(0,0,0,0.6);
+}
+.login h2
+{
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 30px;
+	text-transform: capitalize;
+	text-align: left;
+}
+.login .input-group
+{
+	position: relative;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.login .input-group input
+{
+	height: 50px;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid #000;
+}
+.login .input-group span
+{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	padding: 0;
+	transition: 0.5s;
+	pointer-events: none;
+	background: #fff;
+	text-transform: capitalize;
+}
+.login .input-group input:focus ~ span,
+.login .input-group input:valid ~ span
+{
+	top: -12px;
+	left: 12px;
+	font-size: 12px;
+	padding: 2px 4px;
+	border: 1px solid #000;
+	background: #fff;
+}
+
+.login .input-group input[type="submit"]
+{
+    background: #E50914; 
+	border: none;
+	box-shadow: none;
+	border-radius: 10px;
+	text-transform: capitalize;
+	cursor: pointer;
+	font-weight: 600;
+}
+.login .input-group input[type="submit"]:hover
+{
+    background: rgba(255, 0, 0, 0.6); 
+}
+
+.login .code-btn input
+{
+	height: 50px;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid #000;
+}
+
+.login .code-btn input[type="submit"]
+{
+    background: #817676; 
+	border: none;
+	box-shadow: none;
+	border-radius: 10px;
+	text-transform: capitalize;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.login .code-btn input[type="submit"]:hover
+{
+	background: rgba(196, 196, 196, 0.6); 
+}
+
+.other{
+	font-size: 16px;
+	text-align: left;
+}
+.other a{
+	text-decoration: none;
+}
+
+.other a:hover{
+	text-decoration: underline;
+}
+ 
+.other h5{
+	font-style: normal;
+}
+
+footer{
+	position: absolute;
+	left: 0;
+	bottom: -40vh;
+	width: 100%;
+	height: 260px;
+	background-color: rgba(0,0,0,0.7);
+    padding: 30px 170px;
+}
+
+footer h2{
+    color: #757575;
+	text-decoration: none;
+}
+
+footer a{
+	text-decoration: none;
+	color: #757575;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+footer .top{
+	margin-bottom: 30px;
+}
+
+footer .col{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer .col a{
+    display: inline-block;
+	width: 250px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+}
+
+.lang-btn{
+    background: #000000;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #6e6e6e;
+    border-radius: 10px;
+    padding: 7px 10px;
+}
+
+.lang-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.lang-dropdown{
+    background: #000000;
+    color: #fff;
+    border: none;
+}
+
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
